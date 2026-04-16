@@ -2,10 +2,12 @@
 
 import { motion } from 'framer-motion';
 import { ChevronRight, Play } from 'lucide-react';
+import Countdown from './Countdown';
 
 export default function Hero() {
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+      <Countdown />
       {/* Background Video/Image Placeholder */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
