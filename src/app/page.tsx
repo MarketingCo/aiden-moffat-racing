@@ -3,6 +3,7 @@ import LiveTicker from '@/components/LiveTicker';
 import Hero from '@/components/Hero';
 import StatsDashboard from '@/components/StatsDashboard';
 import BTCCStandings from '@/components/BTCCStandings';
+import Vision from '@/components/Vision';
 import ChampionshipHUD from '@/components/ChampionshipHUD';
 import TelemetryChart from '@/components/TelemetryChart';
 import About from '@/components/About';
@@ -14,6 +15,7 @@ import TrackMap from '@/components/TrackMap';
 import TrackInsight from '@/components/TrackInsight';
 import Calendar from '@/components/Calendar';
 import Gallery from '@/components/Gallery';
+import News from '@/components/News';
 import SocialFeed from '@/components/SocialFeed';
 import Services from '@/components/Services';
 import Newsletter from '@/components/Newsletter';
@@ -29,6 +31,7 @@ export default function Home() {
       <Hero />
       <StatsDashboard />
       <BTCCStandings />
+      <Vision />
       <ChampionshipHUD />
       <TelemetryChart />
       <About />
@@ -40,6 +43,7 @@ export default function Home() {
       <TrackInsight />
       <Calendar />
       <Gallery />
+      <News />
       <SocialFeed />
       <Services />
       <Newsletter />
