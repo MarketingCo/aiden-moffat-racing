@@ -53,7 +53,6 @@ export default function Navbar() {
               </span>
             </button>
           </div>
-... Applied fuzzy match at line 5-47.
 
           <div className="md:hidden">
             <button
