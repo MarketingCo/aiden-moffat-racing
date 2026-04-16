@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import LiveTicker from '@/components/LiveTicker';
 import Hero from '@/components/Hero';
 import StatsDashboard from '@/components/StatsDashboard';
 import About from '@/components/About';
@@ -11,9 +12,8 @@ import SocialFeed from '@/components/SocialFeed';
 import Services from '@/components/Services';
 import Newsletter from '@/components/Newsletter';
 import PressCenter from '@/components/PressCenter';
-import Navbar from '@/components/Navbar';
-import LiveTicker from '@/components/LiveTicker';
-import Hero from '@/components/Hero';
+import Sponsors from '@/components/Sponsors';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (

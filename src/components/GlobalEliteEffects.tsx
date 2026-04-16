@@ -55,10 +55,10 @@ export default function GlobalEliteEffects({ children }: { children: React.React
 
             {/* Matrix-style data stream bits */}
             <div className="absolute bottom-10 left-10 text-[8px] font-mono text-red-600/40 space-y-1 hidden md:block">
-               <div>> SYSTEM_BOOT_SEQUENCE: OK</div>
-               <div>> ENGINE_MAPPING: OPTIMAL</div>
-               <div>> CHASSIS_STIFFNESS: 100%</div>
-               <div>> BTCC_DATABASE_CONNECT: ESTABLISHED</div>
+               <div>&gt; SYSTEM_BOOT_SEQUENCE: OK</div>
+               <div>&gt; ENGINE_MAPPING: OPTIMAL</div>
+               <div>&gt; CHASSIS_STIFFNESS: 100%</div>
+               <div>&gt; BTCC_DATABASE_CONNECT: ESTABLISHED</div>
             </div>
           </motion.div>
         )}
