@@ -62,19 +62,25 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between text-[10px] font-bold uppercase tracking-widest text-zinc-600">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-2">
             <p>© 2026 Aiden Moffat Racing. All Rights Reserved.</p>
-            <p>
-              Website made by{' '}
-              <a 
-                href="https://marketingcompany.co.uk" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-red-600 hover:text-white transition-colors"
-              >
-                Marketing Company
-              </a>
-            </p>
+            <div className="flex gap-4 items-center">
+              <span>
+                Website made by{' '}
+                <a 
+                  href="https://marketingcompany.co.uk" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-red-600 hover:text-white transition-colors"
+                >
+                  Marketing Company
+                </a>
+              </span>
+              <span className="text-zinc-800">|</span>
+              <a href="https://dunross.co.uk" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Dunross Investments</a>
+              <span className="text-zinc-800">|</span>
+              <a href="https://alumise.co.uk" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Alumise</a>
+            </div>
           </div>
           <div className="flex gap-8 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

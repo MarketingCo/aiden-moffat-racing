@@ -12,6 +12,7 @@ import Archive from '@/components/Archive';
 import TechnicalHotspots from '@/components/TechnicalHotspots';
 import TechSpecs from '@/components/TechSpecs';
 import TrackMap from '@/components/TrackMap';
+import TourMap from '@/components/TourMap';
 import TrackInsight from '@/components/TrackInsight';
 import Calendar from '@/components/Calendar';
 import Gallery from '@/components/Gallery';
@@ -22,6 +23,7 @@ import Newsletter from '@/components/Newsletter';
 import PressCenter from '@/components/PressCenter';
 import Sponsors from '@/components/Sponsors';
 import Footer from '@/components/Footer';
+import AudioAmbience from '@/components/AudioAmbience';
 
 export default function Home() {
   return (
@@ -40,6 +42,7 @@ export default function Home() {
       <TechnicalHotspots />
       <TechSpecs />
       <TrackMap />
+      <TourMap />
       <TrackInsight />
       <Calendar />
       <Gallery />
@@ -50,6 +53,7 @@ export default function Home() {
       <PressCenter />
       <Sponsors />
       <Footer />
+      <AudioAmbience />
     </main>
   );
 }
