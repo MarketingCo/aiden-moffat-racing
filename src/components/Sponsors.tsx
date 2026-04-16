@@ -9,6 +9,7 @@ export default function Sponsors() {
       partners: [
         { 
           name: 'LKQ Euro Car Parts', 
+          href: 'https://www.eurocarparts.com',
           type: 'Aiden\'s Title Partner', 
           accent: 'bg-blue-600',
           svg: (
@@ -21,6 +22,7 @@ export default function Sponsors() {
         },
         { 
           name: 'Power Maxed', 
+          href: 'https://www.powermaxed.com',
           type: 'Team Title Partner', 
           accent: 'bg-red-600',
           svg: (
@@ -32,6 +34,7 @@ export default function Sponsors() {
         },
         { 
           name: 'Steel Seal', 
+          href: 'https://www.steelseal.co.uk',
           type: 'Major Partner', 
           accent: 'bg-yellow-500',
           svg: (
@@ -48,6 +51,7 @@ export default function Sponsors() {
       partners: [
         { 
           name: 'Enviroworx', 
+          href: 'https://www.enviroworx.co.uk',
           type: 'Director\'s Brand', 
           accent: 'bg-green-500',
           svg: (
@@ -59,6 +63,7 @@ export default function Sponsors() {
         },
         { 
           name: 'A1 Automotive', 
+          href: 'https://powermaxedracing.com/a1-automotive-race-and-restoration/',
           type: 'Race & Restoration', 
           accent: 'bg-red-700',
           svg: (
@@ -71,6 +76,7 @@ export default function Sponsors() {
         },
         { 
           name: 'CarCave', 
+          href: 'https://www.carcave.scot',
           type: 'Scotland Partner', 
           accent: 'bg-zinc-700',
           svg: (
@@ -82,6 +88,7 @@ export default function Sponsors() {
         },
         { 
           name: 'Audi', 
+          href: 'https://www.audi.co.uk',
           type: 'Vehicle Manufacturer', 
           accent: 'bg-zinc-400',
           svg: (
@@ -100,6 +107,7 @@ export default function Sponsors() {
       partners: [
         { 
           name: 'Kwik Fit', 
+          href: 'https://www.kwik-fit.com',
           type: 'Series Title Sponsor', 
           accent: 'bg-blue-700',
           svg: (
@@ -112,6 +120,7 @@ export default function Sponsors() {
         },
         { 
           name: 'Goodyear', 
+          href: 'https://www.goodyear.eu',
           type: 'Official Tyre Partner', 
           accent: 'bg-yellow-400',
           svg: (
@@ -123,6 +132,7 @@ export default function Sponsors() {
         },
         { 
           name: 'Castrol', 
+          href: 'https://www.castrol.com/en_gb/united-kingdom/home.html',
           type: 'Official Oil Partner', 
           accent: 'bg-green-600',
           svg: (
@@ -134,6 +144,7 @@ export default function Sponsors() {
         },
         { 
           name: 'ITV Sport', 
+          href: 'https://www.itv.com/btcc',
           type: 'Official Broadcaster', 
           accent: 'bg-blue-400',
           svg: (
@@ -173,8 +184,11 @@ export default function Sponsors() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {cat.partners.map((partner, idx) => (
-                  <motion.div
+                  <motion.a
                     key={partner.name}
+                    href={partner.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: (catIdx * 0.1) + (idx * 0.05) }}
@@ -198,7 +212,7 @@ export default function Sponsors() {
                         </>
                       )}
                     </div>
-                  </motion.div>
+                  </motion.a>
                 ))}
               </div>
             </div>
