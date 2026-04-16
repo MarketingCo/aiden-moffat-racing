@@ -33,7 +33,7 @@ export default function Hero() {
             <span className="inline-block animate-glitch">Aiden</span> <span className="text-red-600 inline-block animate-glitch">Moffat</span>
           </h1>
           <p className="text-xl md:text-2xl font-bold text-gray-400 mb-10 max-w-2xl mx-auto uppercase tracking-wide">
-            Driving the LKQ Euro Car Parts <span className="text-white">Audi S3 Saloon</span> for Power Maxed Racing.
+            Driving the LKQ Euro Car Parts - now offering driver training in Edinburgh, Scotland <span className="text-white">Audi S3 Saloon</span> for Power Maxed Racing.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
