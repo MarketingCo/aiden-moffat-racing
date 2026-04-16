@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import LiveTicker from '@/components/LiveTicker';
 import Hero from '@/components/Hero';
@@ -27,10 +30,21 @@ import PressCenter from '@/components/PressCenter';
 import Sponsors from '@/components/Sponsors';
 import Footer from '@/components/Footer';
 import AudioAmbience from '@/components/AudioAmbience';
+import ContactPortal from '@/components/ContactPortal';
+import MobileHUD from '@/components/MobileHUD';
+import { useEffect } from 'react';
 
 export default function Home() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
+  useEffect(() => {
+    const handleOpen = () => setIsContactOpen(true);
+    window.addEventListener('open-contact', handleOpen);
+    return () => window.removeEventListener('open-contact', handleOpen);
+  }, []);
+
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white pt-8">
+    <main className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white pt-8 pb-20 md:pb-0">
       <Navbar />
       <LiveTicker />
       <Hero />
@@ -59,7 +73,17 @@ export default function Home() {
       <PressCenter />
       <Sponsors />
       <Footer />
+      
       <AudioAmbience />
+      <ContactPortal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+      <MobileHUD onContactOpen={() => setIsContactOpen(true)} />
+
+      {/* Trigger Area for Global Enquire Buttons */}
+      <style jsx global>{`
+        .enquire-trigger {
+           cursor: pointer;
+        }
+      `}</style>
     </main>
   );
 }
