@@ -3,6 +3,10 @@ import { CheckCircle2, Monitor, Users, Zap } from 'lucide-react';
 export default function Services() {
   const services = [
     {
+        title: 'Merchandise Store',
+        description: 'Explore our range of caps, jackets, and team wear.',
+    },
+    {
       title: 'One-on-One Racing Coach',
       description: 'Personalized high-performance coaching. Tailored for all levels, focusing on line selection, data analysis, and mental preparation.',
       icon: <Zap className="h-10 w-10 text-red-600" />,

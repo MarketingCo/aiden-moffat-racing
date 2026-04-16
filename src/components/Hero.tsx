@@ -6,6 +6,11 @@ import Countdown from './Countdown';
 
 export default function Hero() {
   return (
+    <React.Fragment>
+        <h3>What Drives Me</h3>
+        <p>My journey has been filled with challenges that shaped me into the driver I am today...</p>
+    </React.Fragment>
+
     <div className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
       <Countdown />
       {/* Background Video/Image Placeholder */}
