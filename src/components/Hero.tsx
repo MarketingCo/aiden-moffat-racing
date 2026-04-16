@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black/40 z-10" />
-        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1596727147705-61a532a655bd?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center grayscale opacity-40 scale-105" />
+        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1541890289-b86df5bafd81?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center grayscale opacity-30 scale-105" />
       </div>
 
       <div className="relative z-20 text-center px-4 max-w-5xl">

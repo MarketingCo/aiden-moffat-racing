@@ -14,7 +14,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-red-600/10 rounded-full blur-3xl" />
-            <div className="aspect-[4/5] bg-[url('https://images.unsplash.com/photo-1511919095327-ef552af36c3a?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center rounded-sm border-2 border-white/5 shadow-2xl scale-95" />
+            <div className="aspect-[4/5] bg-[url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1964&auto=format&fit=crop')] bg-cover bg-center rounded-sm border-2 border-white/5 shadow-2xl scale-95" />
             <div className="absolute -bottom-6 -right-6 p-10 bg-black border border-white/10 hidden md:block">
               <span className="text-8xl font-black italic tracking-tighter text-red-600">16</span>
               <p className="font-bold uppercase tracking-widest text-sm">BTCC Number</p>
