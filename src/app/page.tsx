@@ -28,6 +28,7 @@ import AutographCanvas from '@/components/AutographCanvas';
 import SocialFeed from '@/components/SocialFeed';
 import Services from '@/components/Services';
 import Newsletter from '@/components/Newsletter';
+import PaddockTerminal from '@/components/PaddockTerminal';
 import PressCenter from '@/components/PressCenter';
 import Sponsors from '@/components/Sponsors';
 import Footer from '@/components/Footer';
@@ -73,6 +74,7 @@ export default function Home() {
       <SocialFeed />
       <Services />
       <Newsletter />
+      <PaddockTerminal />
       <PressCenter />
       <Sponsors />
       <Footer />
