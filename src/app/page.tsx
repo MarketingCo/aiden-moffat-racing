@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import LiveTicker from '@/components/LiveTicker';
 import Hero from '@/components/Hero';
@@ -11,6 +11,7 @@ import ChampionshipHUD from '@/components/ChampionshipHUD';
 import TelemetryChart from '@/components/TelemetryChart';
 import About from '@/components/About';
 import Timeline from '@/components/Timeline';
+import TrophyRoom from '@/components/TrophyRoom';
 import Archive from '@/components/Archive';
 import TechnicalHotspots from '@/components/TechnicalHotspots';
 import TechSpecs from '@/components/TechSpecs';
@@ -22,6 +23,7 @@ import TrackInsight from '@/components/TrackInsight';
 import Calendar from '@/components/Calendar';
 import Gallery from '@/components/Gallery';
 import News from '@/components/News';
+import LiveComms from '@/components/LiveComms';
 import AutographCanvas from '@/components/AutographCanvas';
 import SocialFeed from '@/components/SocialFeed';
 import Services from '@/components/Services';
@@ -32,7 +34,6 @@ import Footer from '@/components/Footer';
 import AudioAmbience from '@/components/AudioAmbience';
 import ContactPortal from '@/components/ContactPortal';
 import MobileHUD from '@/components/MobileHUD';
-import { useEffect } from 'react';
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -55,6 +56,7 @@ export default function Home() {
       <TelemetryChart />
       <About />
       <Timeline />
+      <TrophyRoom />
       <Archive />
       <TechnicalHotspots />
       <TechSpecs />
@@ -66,6 +68,7 @@ export default function Home() {
       <Calendar />
       <Gallery />
       <News />
+      <LiveComms />
       <AutographCanvas />
       <SocialFeed />
       <Services />
@@ -77,13 +80,6 @@ export default function Home() {
       <AudioAmbience />
       <ContactPortal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
       <MobileHUD onContactOpen={() => setIsContactOpen(true)} />
-
-      {/* Trigger Area for Global Enquire Buttons */}
-      <style jsx global>{`
-        .enquire-trigger {
-           cursor: pointer;
-        }
-      `}</style>
     </main>
   );
 }
