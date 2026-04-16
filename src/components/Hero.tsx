@@ -24,8 +24,8 @@ export default function Hero() {
           <span className="inline-block px-4 py-1 mb-6 border-l-4 border-red-600 bg-white/10 text-white font-bold tracking-widest uppercase italic text-sm">
             2026 Kwik Fit BTCC Challenger
           </span>
-          <h1 className="text-6xl md:text-9xl font-black italic tracking-tighter uppercase mb-6 leading-none">
-            Aiden <span className="text-red-600">Moffat</span>
+          <h1 className="text-6xl md:text-9xl font-black italic tracking-tighter uppercase mb-6 leading-none group">
+            <span className="inline-block animate-glitch">Aiden</span> <span className="text-red-600 inline-block animate-glitch">Moffat</span>
           </h1>
           <p className="text-xl md:text-2xl font-bold text-gray-400 mb-10 max-w-2xl mx-auto uppercase tracking-wide">
             Driving the LKQ Euro Car Parts <span className="text-white">Audi S3 Saloon</span> for Power Maxed Racing.

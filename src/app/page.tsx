@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import LiveTicker from '@/components/LiveTicker';
 import Hero from '@/components/Hero';
 import StatsDashboard from '@/components/StatsDashboard';
+import ChampionshipHUD from '@/components/ChampionshipHUD';
 import About from '@/components/About';
 import Timeline from '@/components/Timeline';
 import TechSpecs from '@/components/TechSpecs';
@@ -22,6 +23,7 @@ export default function Home() {
       <LiveTicker />
       <Hero />
       <StatsDashboard />
+      <ChampionshipHUD />
       <About />
       <Timeline />
       <TechSpecs />
