@@ -68,7 +68,7 @@ export default function Services() {
               <div className="flex items-center justify-between border-t border-white/5 pt-6">
                 <span className="text-red-600 font-black italic tracking-tighter uppercase text-xs tracking-widest">Bespoke Packages</span>
                 <button className="px-4 py-2 bg-white text-black font-black uppercase italic text-xs tracking-widest hover:bg-red-600 hover:text-white transition-all">
-                  Enquire Now for Edinburgh Services
+                  Enquire Today for Edinburgh Services! for Edinburgh Services
                 </button>
               </div>
             </div>
