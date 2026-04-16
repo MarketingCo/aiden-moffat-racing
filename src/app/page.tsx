@@ -12,12 +12,14 @@ import Archive from '@/components/Archive';
 import TechnicalHotspots from '@/components/TechnicalHotspots';
 import TechSpecs from '@/components/TechSpecs';
 import TyreStrategy from '@/components/TyreStrategy';
+import SetupSheet from '@/components/SetupSheet';
 import TrackMap from '@/components/TrackMap';
 import TourMap from '@/components/TourMap';
 import TrackInsight from '@/components/TrackInsight';
 import Calendar from '@/components/Calendar';
 import Gallery from '@/components/Gallery';
 import News from '@/components/News';
+import AutographCanvas from '@/components/AutographCanvas';
 import SocialFeed from '@/components/SocialFeed';
 import Services from '@/components/Services';
 import Newsletter from '@/components/Newsletter';
@@ -43,12 +45,14 @@ export default function Home() {
       <TechnicalHotspots />
       <TechSpecs />
       <TyreStrategy />
+      <SetupSheet />
       <TrackMap />
       <TourMap />
       <TrackInsight />
       <Calendar />
       <Gallery />
       <News />
+      <AutographCanvas />
       <SocialFeed />
       <Services />
       <Newsletter />
