@@ -61,3 +61,32 @@ body {
 .group:hover .animate-glitch {
   animation-play-state: running;
 }
+
+/* Race Mode UI Shifts */
+.race-mode-active {
+  --accent-red: #ff0000;
+}
+
+.race-mode-active body {
+  background-color: #050000;
+}
+
+@keyframes pulse-red {
+  0% { border-color: rgba(230, 0, 0, 0.2); }
+  50% { border-color: rgba(255, 0, 0, 1); }
+  100% { border-color: rgba(230, 0, 0, 0.2); }
+}
+
+.race-mode-active .racing-card {
+  animation: pulse-red 2s infinite;
+}
+
+.race-mode-active .scan-line {
+  opacity: 0.4 !important;
+  animation: scan 1s linear infinite;
+}
+
+@keyframes scan {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(100%); }
+}

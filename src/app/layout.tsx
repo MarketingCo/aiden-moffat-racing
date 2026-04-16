@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 };
 
 import GlobalEliteEffects from "@/components/GlobalEliteEffects";
+import { RaceModeProvider } from "@/components/RaceModeContext";
 
 export default function RootLayout({
   children,
@@ -30,9 +31,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-black">
-        <GlobalEliteEffects>
-          {children}
-        </GlobalEliteEffects>
+        <RaceModeProvider>
+          <GlobalEliteEffects>
+            {children}
+          </GlobalEliteEffects>
+        </RaceModeProvider>
       </body>
     </html>
   );
