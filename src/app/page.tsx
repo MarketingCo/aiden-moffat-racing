@@ -11,6 +11,7 @@ import Timeline from '@/components/Timeline';
 import Archive from '@/components/Archive';
 import TechnicalHotspots from '@/components/TechnicalHotspots';
 import TechSpecs from '@/components/TechSpecs';
+import TyreStrategy from '@/components/TyreStrategy';
 import TrackMap from '@/components/TrackMap';
 import TourMap from '@/components/TourMap';
 import TrackInsight from '@/components/TrackInsight';
@@ -41,6 +42,7 @@ export default function Home() {
       <Archive />
       <TechnicalHotspots />
       <TechSpecs />
+      <TyreStrategy />
       <TrackMap />
       <TourMap />
       <TrackInsight />
