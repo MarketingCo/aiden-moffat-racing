@@ -11,13 +11,15 @@ import SocialFeed from '@/components/SocialFeed';
 import Services from '@/components/Services';
 import Newsletter from '@/components/Newsletter';
 import PressCenter from '@/components/PressCenter';
-import Sponsors from '@/components/Sponsors';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import LiveTicker from '@/components/LiveTicker';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white">
+    <main className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white pt-8">
       <Navbar />
+      <LiveTicker />
       <Hero />
       <StatsDashboard />
       <About />

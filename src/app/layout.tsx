@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "Official website of Aiden Moffat, BTCC race car driver for Power Maxed Racing. Specialized one-on-one race training, group sessions, and 2026 season updates.",
 };
 
+import GlobalEliteEffects from "@/components/GlobalEliteEffects";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +29,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-black">
+        <GlobalEliteEffects>
+          {children}
+        </GlobalEliteEffects>
+      </body>
     </html>
   );
 }
