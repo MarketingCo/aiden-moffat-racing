@@ -7,29 +7,102 @@ export default function Sponsors() {
     {
       title: "Title & Primary Partners",
       partners: [
-        { name: 'LKQ Euro Car Parts', type: 'Aiden\'s Title Partner', accent: 'bg-blue-600' },
-        { name: 'Power Maxed', type: 'Team Title Partner', accent: 'bg-red-600' },
-        { name: 'Steel Seal', type: 'Major Partner', accent: 'bg-yellow-500' },
+        { 
+          name: 'LKQ Euro Car Parts', 
+          type: 'Aiden\'s Title Partner', 
+          accent: 'bg-blue-600',
+          svg: (
+            <svg viewBox="0 0 300 80" className="h-full w-full">
+              <rect width="80" height="40" x="10" y="20" fill="#0054A6" rx="4"/>
+              <text x="18" y="50" className="font-black" fill="white" fontSize="24">LKQ</text>
+              <text x="100" y="45" className="font-bold" fill="#0054A6" fontSize="18">Euro Car Parts</text>
+            </svg>
+          )
+        },
+        { 
+          name: 'Power Maxed', 
+          type: 'Team Title Partner', 
+          accent: 'bg-red-600',
+          svg: (
+            <svg viewBox="0 0 400 100" className="h-full w-full">
+              <text x="10" y="60" className="italic font-black" fill="#E21F26" fontSize="48">POWER MAXED</text>
+              <text x="280" y="60" className="font-bold" fill="#333" fontSize="24">RACING</text>
+            </svg>
+          )
+        },
+        { 
+          name: 'Steel Seal', 
+          type: 'Major Partner', 
+          accent: 'bg-yellow-500',
+          svg: (
+            <svg viewBox="0 0 250 60" className="h-full w-full">
+              <text x="10" y="45" className="font-black" fill="#222" fontSize="36">STEEL SEAL</text>
+              <path d="M10 50h230v4H10z" fill="#E21F26"/>
+            </svg>
+          )
+        },
       ]
     },
     {
       title: "Technical & Performance",
       partners: [
-        { name: 'Audi', type: 'Vehicle Manufacturer', accent: 'bg-zinc-400' },
+        { 
+          name: 'Audi', 
+          type: 'Vehicle Manufacturer', 
+          accent: 'bg-zinc-400',
+          svg: (
+            <svg viewBox="0 0 1000 353" fill="currentColor" className="h-full w-full">
+              <path d="M176.5 353c-97.5 0-176.5-79-176.5-176.5S79 0 176.5 0s176.5 79 176.5 176.5S274 353 176.5 353zm0-313c-75.4 0-136.5 61.1-136.5 136.5S101.1 313 176.5 313s136.5-61.1 136.5-136.5S251.9 40 176.5 40z"/>
+              <path d="M392.2 353c-97.5 0-176.5-79-176.5-176.5S294.7 0 392.2 0s176.5 79 176.5 176.5S489.7 353 392.2 353zm0-313c-75.4 0-136.5 61.1-136.5 136.5S316.8 313 392.2 313s136.5-61.1 136.5-136.5S467.6 40 392.2 40z"/>
+              <path d="M607.8 353c-97.5 0-176.5-79-176.5-176.5S510.3 0 607.8 0s176.5 79 176.5 176.5S705.3 353 607.8 353zm0-313c-75.4 0-136.5 61.1-136.5 136.5S532.4 313 607.8 313s136.5-61.1 136.5-136.5S683.2 40 607.8 40z"/>
+              <path d="M823.5 353c-97.5 0-176.5-79-176.5-176.5S726 0 823.5 0s176.5 79 176.5 176.5S921 353 823.5 353zm0-313c-75.4 0-136.5 61.1-136.5 136.5S748.1 313 823.5 313s136.5-61.1 136.5-136.5S898.9 40 823.5 40z"/>
+            </svg>
+          )
+        },
         { name: 'Awesome', type: 'Performance Parts', accent: 'bg-orange-500' },
         { name: 'Eibach', type: 'Suspension Partner', accent: 'bg-red-500' },
         { name: 'Teng Tools', type: 'Official Tools', accent: 'bg-red-700' },
         { name: 'Milltek Sport', type: 'Exhaust Systems', accent: 'bg-zinc-600' },
-        { name: 'Pipercross', type: 'Air Filtration', accent: 'bg-zinc-800' },
       ]
     },
     {
       title: "BTCC Series Partners",
       partners: [
-        { name: 'Kwik Fit', type: 'Series Title Sponsor', accent: 'bg-blue-700' },
-        { name: 'Goodyear', type: 'Official Tyre Partner', accent: 'bg-yellow-400' },
-        { name: 'Castrol', type: 'Official Oil Partner', accent: 'bg-green-600' },
-        { name: 'ITV Sport', type: 'Official Broadcaster', accent: 'bg-blue-400' },
+        { 
+          name: 'Kwik Fit', 
+          type: 'Series Title Sponsor', 
+          accent: 'bg-blue-700',
+          svg: (
+            <svg viewBox="0 0 200 50" className="h-full w-full">
+              <rect width="200" height="50" fill="#0054A6"/>
+              <circle cx="170" cy="25" r="15" fill="#FCAF17"/>
+              <text x="10" y="35" className="italic font-bold" fill="white" fontSize="28">Kwik Fit</text>
+            </svg>
+          )
+        },
+        { 
+          name: 'Goodyear', 
+          type: 'Official Tyre Partner', 
+          accent: 'bg-yellow-400',
+          svg: (
+            <svg viewBox="0 0 300 60" fill="#002E67" className="h-full w-full">
+              <path d="M45.2 15.5l-5.4 12.2h10.8l-5.4-12.2zm-15.2 28.5l12.5-28.5h5.4l12.5 28.5h-5.8l-3.2-7.5H31.2l-3.2 7.5h-5.8z"/>
+              <path fill="#FFDE00" d="M150 10c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10zm0 5c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z"/>
+            </svg>
+          )
+        },
+        { 
+          name: 'Castrol', 
+          type: 'Official Oil Partner', 
+          accent: 'bg-green-600',
+          svg: (
+            <svg viewBox="0 0 158 40" className="h-full w-full">
+              <path fill="#00824D" d="M18.5 0C8.3 0 0 8.3 0 18.5S8.3 37 18.5 37h121c10.2 0 18.5-8.3 18.5-18.5S149.7 0 139.5 0h-121z"/>
+              <path fill="#FFF" d="M25.4 25.8c-4.2 0-7.6-3.4-7.6-7.6s3.4-7.6 7.6-7.6 7.6 3.4 7.6 7.6-3.4 7.6-7.6 7.6z"/>
+              <path fill="#E21F26" d="M139.5 5.5c7.2 0 13 5.8 13 13s-5.8 13-13 13-13-5.8-13-13 5.8-13 13-13z"/>
+            </svg>
+          )
+        },
       ]
     }
   ];
@@ -69,12 +142,21 @@ export default function Sponsors() {
                   >
                     <div className="w-full aspect-[16/7] bg-zinc-50 flex flex-col items-center justify-center p-6 transition-all duration-300 border border-zinc-100 hover:border-red-600/20 hover:bg-white hover:shadow-lg relative overflow-hidden">
                       <div className={`absolute left-0 top-0 w-1 h-full ${partner.accent} opacity-40 group-hover:opacity-100 transition-opacity`} />
-                      <span className="text-lg font-black italic tracking-tighter text-zinc-800 uppercase text-center leading-none group-hover:text-black transition-colors">
-                        {partner.name}
-                      </span>
-                      <span className="mt-2 text-[9px] font-bold uppercase tracking-widest text-zinc-400 group-hover:text-zinc-500 transition-colors">
-                        {partner.type}
-                      </span>
+                      
+                      {partner.svg ? (
+                        <div className="h-12 w-full max-w-[180px] flex items-center justify-center transition-transform group-hover:scale-110 grayscale hover:grayscale-0">
+                          {partner.svg}
+                        </div>
+                      ) : (
+                        <>
+                          <span className="text-lg font-black italic tracking-tighter text-zinc-800 uppercase text-center leading-none group-hover:text-black transition-colors">
+                            {partner.name}
+                          </span>
+                          <span className="mt-2 text-[9px] font-bold uppercase tracking-widest text-zinc-400 group-hover:text-zinc-500 transition-colors">
+                            {partner.type}
+                          </span>
+                        </>
+                      )}
                     </div>
                   </motion.div>
                 ))}
