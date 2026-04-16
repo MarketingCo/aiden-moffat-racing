@@ -44,8 +44,42 @@ export default function Sponsors() {
       ]
     },
     {
-      title: "Technical & Performance",
+      title: "Personal & Technical Partners",
       partners: [
+        { 
+          name: 'Enviroworx', 
+          type: 'Director\'s Brand', 
+          accent: 'bg-green-500',
+          svg: (
+            <svg viewBox="0 0 400 100" className="h-full w-full">
+              <text x="10" y="70" style={{ fontWeight: 900 }} fontSize="45" fill="white" letterSpacing="-1">ENVIROWORX</text>
+              <path d="M340 30 L360 70 M360 30 L340 70" stroke="#4CAF50" strokeWidth="8" strokeLinecap="round"/>
+            </svg>
+          )
+        },
+        { 
+          name: 'A1 Automotive', 
+          type: 'Race & Restoration', 
+          accent: 'bg-red-700',
+          svg: (
+            <svg viewBox="0 0 400 120" className="h-full w-full">
+              <text x="10" y="85" style={{ fontWeight: 900 }} fontSize="100" fill="white">A1</text>
+              <text x="120" y="55" style={{ fontWeight: 'bold' }} fontSize="25" fill="white">AUTOMOTIVE</text>
+              <text x="120" y="85" fontSize="18" fill="#E31E24">RACE & RESTORATION</text>
+            </svg>
+          )
+        },
+        { 
+          name: 'CarCave', 
+          type: 'Scotland Partner', 
+          accent: 'bg-zinc-700',
+          svg: (
+            <svg viewBox="0 0 400 100" className="h-full w-full">
+              <path d="M20 20 L60 20 L60 80 L20 80 Z" fill="none" stroke="white" strokeWidth="4"/>
+              <text x="75" y="70" style={{ fontWeight: 'bold' }} fontSize="45" fill="white">CARCAVE</text>
+            </svg>
+          )
+        },
         { 
           name: 'Audi', 
           type: 'Vehicle Manufacturer', 
@@ -59,10 +93,6 @@ export default function Sponsors() {
             </svg>
           )
         },
-        { name: 'Awesome', type: 'Performance Parts', accent: 'bg-orange-500' },
-        { name: 'Eibach', type: 'Suspension Partner', accent: 'bg-red-500' },
-        { name: 'Teng Tools', type: 'Official Tools', accent: 'bg-red-700' },
-        { name: 'Milltek Sport', type: 'Exhaust Systems', accent: 'bg-zinc-600' },
       ]
     },
     {
@@ -85,9 +115,9 @@ export default function Sponsors() {
           type: 'Official Tyre Partner', 
           accent: 'bg-yellow-400',
           svg: (
-            <svg viewBox="0 0 300 60" fill="white" className="h-full w-full">
-              <path d="M45.2 15.5l-5.4 12.2h10.8l-5.4-12.2zm-15.2 28.5l12.5-28.5h5.4l12.5 28.5h-5.8l-3.2-7.5H31.2l-3.2 7.5h-5.8z"/>
-              <path fill="#FFDE00" d="M150 10c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10zm0 5c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z"/>
+            <svg viewBox="0 0 500 100" className="h-full w-full">
+               <path fill="white" d="M45.2,72.1c-4.8,0-8.8-1.4-12-4.1c-3.2-2.7-4.8-6.6-4.8-11.6c0-5.1,1.7-9.1,5.1-11.9c3.4-2.8,7.9-4.2,13.5-4.2c3.8,0,7.1,0.6,9.9,1.8v8.4c-2.8-1.8-5.8-2.7-9-2.7c-2.8,0-5,0.7-6.6,2.1c-1.6,1.4-2.4,3.5-2.4,6.3c0,2.8,0.8,4.9,2.4,6.3c1.6,1.4,3.8,2.1,6.6,2.1c3.4,0,6.5-1,9.3-3v8.4C52.4,71.4,49.1,72.1,45.2,72.1z M105.4,72.1c-5.5,0-10-1.4-13.4-4.2c-3.4-2.8-5.1-6.8-5.1-11.9c0-5,1.6-9,4.8-11.7c3.2-2.7,7.2-4.1,12-4.1c4.8,0,8.8,1.4,12,4.1c3.2,2.7,4.8,6.7,4.8,11.7c0,5.1-1.7,9.1-5.1,11.9C115.4,70.7,110.9,72.1,105.4,72.1z"/>
+               <text x="150" y="72" style={{ fontStyle: 'italic', fontWeight: 900 }} fontSize="55" fill="white">GOODYEAR</text>
             </svg>
           )
         },
@@ -96,10 +126,20 @@ export default function Sponsors() {
           type: 'Official Oil Partner', 
           accent: 'bg-green-600',
           svg: (
-            <svg viewBox="0 0 158 40" className="h-full w-full">
-              <path fill="#00824D" d="M18.5 0C8.3 0 0 8.3 0 18.5S8.3 37 18.5 37h121c10.2 0 18.5-8.3 18.5-18.5S149.7 0 139.5 0h-121z"/>
-              <path fill="#FFF" d="M25.4 25.8c-4.2 0-7.6-3.4-7.6-7.6s3.4-7.6 7.6-7.6 7.6 3.4 7.6 7.6-3.4 7.6-7.6 7.6z"/>
-              <path fill="#E21F26" d="M139.5 5.5c7.2 0 13 5.8 13 13s-5.8 13-13 13-13-5.8-13-13 5.8-13 13-13z"/>
+            <svg viewBox="0 0 300 100" className="h-full w-full">
+              <path fill="white" d="M50,20 A30,30 0 1,0 50,80 A30,30 0 0,0 70,75 L65,65 A20,20 0 1,1 50,30 A20,20 0 0,1 65,35 L70,25 A30,30 0 0,0 50,20 Z"/>
+              <text x="90" y="65" style={{ fontWeight: 'bold' }} fontSize="45" fill="white">Castrol</text>
+            </svg>
+          )
+        },
+        { 
+          name: 'ITV Sport', 
+          type: 'Official Broadcaster', 
+          accent: 'bg-blue-400',
+          svg: (
+            <svg viewBox="0 0 300 100" className="h-full w-full">
+              <path fill="white" d="M20,40 Q20,30 30,30 L50,30 Q60,30 60,40 L60,70 Q60,80 50,80 L30,80 Q20,80 20,70 Z M80,30 L100,30 L110,60 L120,30 L140,30 L120,80 L100,80 Z"/>
+              <text x="150" y="75" style={{ fontWeight: 900 }} fontSize="40" fill="white">SPORT</text>
             </svg>
           )
         },
