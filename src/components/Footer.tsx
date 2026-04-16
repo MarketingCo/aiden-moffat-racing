@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between text-[10px] font-bold uppercase tracking-widest text-zinc-600">
-          <p>© 2026 Aiden Moffat Racing. All Rights Reserved.</p>
+          <p>© 2026 Aiden Moffat Racing. All Rights Reserved. Website by <a href="https://marketing-company.co.uk" className="hover:text-red-600 transition-colors">Marketing Company</a></p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
