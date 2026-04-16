@@ -2,7 +2,9 @@ import Navbar from '@/components/Navbar';
 import LiveTicker from '@/components/LiveTicker';
 import Hero from '@/components/Hero';
 import StatsDashboard from '@/components/StatsDashboard';
+import BTCCStandings from '@/components/BTCCStandings';
 import ChampionshipHUD from '@/components/ChampionshipHUD';
+import TelemetryChart from '@/components/TelemetryChart';
 import About from '@/components/About';
 import Timeline from '@/components/Timeline';
 import Archive from '@/components/Archive';
@@ -26,7 +28,9 @@ export default function Home() {
       <LiveTicker />
       <Hero />
       <StatsDashboard />
+      <BTCCStandings />
       <ChampionshipHUD />
+      <TelemetryChart />
       <About />
       <Timeline />
       <Archive />
