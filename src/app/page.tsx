@@ -5,7 +5,9 @@ import StatsDashboard from '@/components/StatsDashboard';
 import ChampionshipHUD from '@/components/ChampionshipHUD';
 import About from '@/components/About';
 import Timeline from '@/components/Timeline';
+import TechnicalHotspots from '@/components/TechnicalHotspots';
 import TechSpecs from '@/components/TechSpecs';
+import TrackMap from '@/components/TrackMap';
 import TrackInsight from '@/components/TrackInsight';
 import Calendar from '@/components/Calendar';
 import Gallery from '@/components/Gallery';
@@ -26,7 +28,9 @@ export default function Home() {
       <ChampionshipHUD />
       <About />
       <Timeline />
+      <TechnicalHotspots />
       <TechSpecs />
+      <TrackMap />
       <TrackInsight />
       <Calendar />
       <Gallery />
