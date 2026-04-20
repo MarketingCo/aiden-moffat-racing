@@ -64,19 +64,16 @@ export default function GlobalEliteEffects({ children }: { children: React.React
         )}
       </AnimatePresence>
 
-      {/* Custom Cursor */}
-      <div 
-        className="fixed top-0 left-0 w-8 h-8 border border-red-600 pointer-events-none z-[99] hidden lg:block rounded-full transition-transform duration-75 mix-blend-difference"
+      {/* Custom Cursor - Sharp Chevron */}
+      <motion.div 
+        className="fixed top-0 left-0 w-8 h-8 pointer-events-none z-[99] hidden lg:flex items-center justify-center font-black text-cyan-400 text-3xl italic tracking-tighter mix-blend-difference"
         style={{ 
-          transform: `translate(${mousePos.x - 16}px, ${mousePos.y - 16}px)`,
+          x: mousePos.x - 16,
+          y: mousePos.y - 16,
         }}
-      />
-      <div 
-        className="fixed top-0 left-0 w-2 h-2 bg-red-600 pointer-events-none z-[99] hidden lg:block rounded-full transition-transform duration-300"
-        style={{ 
-          transform: `translate(${mousePos.x - 4}px, ${mousePos.y - 4}px)`,
-        }}
-      />
+      >
+        &gt;
+      </motion.div>
 
       <div className={loading ? 'hidden' : 'block'}>
         {children}

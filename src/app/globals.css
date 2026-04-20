@@ -1,32 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
+  --background: #1A1A1A;
   --foreground: #ededed;
-  --accent-blue: #0056b3;
-  --accent-red: #e60000;
+  --accent-blue: #00FFFF;
+  --accent-red: #ff004c;
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-    @media (max-width: 600px) {
-        .hud { display: none; }
-    }
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600;
 }
 
 .racing-border {
-  @apply border-b-4 border-red-600;
+  @apply border-b-4 border-cyan-400;
 }
 
 /* Custom Racing Scrollbar */
@@ -35,16 +41,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #111;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #222;
-  border: 3px solid #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #e60000;
+  background: #00FFFF;
+  border: 3px solid #111;
 }
 
 @keyframes glitch {
@@ -63,33 +65,4 @@ body {
 
 .group:hover .animate-glitch {
   animation-play-state: running;
-}
-
-/* Race Mode UI Shifts */
-.race-mode-active {
-  --accent-red: #ff0000;
-}
-
-.race-mode-active body {
-  background-color: #050000;
-}
-
-@keyframes pulse-red {
-  0% { border-color: rgba(230, 0, 0, 0.2); }
-  50% { border-color: rgba(255, 0, 0, 1); }
-  100% { border-color: rgba(230, 0, 0, 0.2); }
-}
-
-.race-mode-active .racing-card {
-  animation: pulse-red 2s infinite;
-}
-
-.race-mode-active .scan-line {
-  opacity: 0.4 !important;
-  animation: scan 1s linear infinite;
-}
-
-@keyframes scan {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(100%); }
 }
