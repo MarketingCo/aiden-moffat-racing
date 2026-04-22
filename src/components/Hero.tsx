@@ -4,10 +4,12 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Play } from 'lucide-react';
 import Countdown from './Countdown';
 
+const easing = [0.16, 1, 0.3, 1] as [number, number, number, number];
+
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1], delay },
+  transition: { duration: 0.7, ease: easing, delay },
 });
 
 export default function Hero() {

@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
+const geistSans = localFont({
+  src: [
+    { path: "./fonts/geist-latin.woff2", weight: "100 900", style: "normal" },
+    { path: "./fonts/geist-latin-ext.woff2", weight: "100 900", style: "normal" },
+  ],
   variable: "--font-geist-sans",
-  subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.aidenmoffat.com"),
   title: "Aiden Moffat | Official Website | BTCC Race Driver",
   description:
     "Official website of Aiden Moffat, BTCC racing driver for Power Maxed Racing. Experience professional race training, one-on-one coaching, group track days, and follow the 2026 Kwik Fit British Touring Car Championship season.",
