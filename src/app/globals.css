@@ -3,58 +3,63 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --accent-blue: #0056b3;
   --accent-red: #e60000;
 }
 
 @theme {
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-.gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600;
+/* Entrance animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.racing-border {
-  @apply border-b-4 border-red-600;
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
-/* Custom Racing Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+.animate-fade-up {
+  animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-::-webkit-scrollbar-track {
-  background: #0a0a0a;
+.animate-fade-in {
+  animation: fade-in 0.5s ease both;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #222;
-  border: 3px solid #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #e60000;
-}
-
+/* Glitch effect (hover-activated) */
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
+  0%   { transform: translate(0); }
+  20%  { transform: translate(-2px, 2px); }
+  40%  { transform: translate(-2px, -2px); }
+  60%  { transform: translate(2px, 2px); }
+  80%  { transform: translate(2px, -2px); }
   100% { transform: translate(0); }
 }
 
 .animate-glitch {
-  animation: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   animation-play-state: paused;
 }
 
@@ -62,18 +67,32 @@ body {
   animation-play-state: running;
 }
 
-/* Race Mode UI Shifts */
+/* Refined scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-red);
+}
+
+/* Race Mode */
 .race-mode-active {
   --accent-red: #ff0000;
 }
 
-.race-mode-active body {
-  background-color: #050000;
-}
-
 @keyframes pulse-red {
-  0% { border-color: rgba(230, 0, 0, 0.2); }
-  50% { border-color: rgba(255, 0, 0, 1); }
+  0%   { border-color: rgba(230, 0, 0, 0.2); }
+  50%  { border-color: rgba(255, 0, 0, 1); }
   100% { border-color: rgba(230, 0, 0, 0.2); }
 }
 
@@ -88,5 +107,5 @@ body {
 
 @keyframes scan {
   from { transform: translateY(-100%); }
-  to { transform: translateY(100%); }
+  to   { transform: translateY(100%); }
 }

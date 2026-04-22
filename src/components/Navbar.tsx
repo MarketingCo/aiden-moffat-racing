@@ -18,62 +18,79 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b transition-colors duration-500 ${isRaceMode ? 'border-red-600 shadow-[0_0_20px_rgba(255,0,0,0.2)]' : 'border-white/10'}`}>
+    <nav
+      className={`fixed w-full z-50 backdrop-blur-md border-b transition-all duration-300 ${
+        isRaceMode
+          ? 'bg-black/95 border-red-600/60 shadow-[0_1px_20px_rgba(255,0,0,0.15)]'
+          : 'bg-black/90 border-white/[0.08]'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-2">
-              <Trophy className={`h-8 w-8 transition-colors ${isRaceMode ? 'text-red-500' : 'text-red-600'}`} />
-              <span className="text-2xl font-black tracking-tighter italic uppercase">
-                Aiden<span className={isRaceMode ? 'text-red-500 animate-pulse' : 'text-red-600'}>Moffat</span>
+        <div className="flex items-center justify-between h-18 py-4">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2 group">
+            <Trophy
+              className={`h-7 w-7 transition-colors duration-200 ${
+                isRaceMode ? 'text-red-500' : 'text-red-600 group-hover:text-red-500'
+              }`}
+            />
+            <span className="text-xl font-black tracking-tighter italic uppercase">
+              Aiden
+              <span className={`${isRaceMode ? 'text-red-500 animate-pulse' : 'text-red-600'} transition-colors`}>
+                Moffat
               </span>
-            </Link>
-          </div>
-          
+            </span>
+          </Link>
+
+          {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            <div className="flex items-baseline space-x-8">
+            <div className="flex items-baseline gap-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-gray-300 hover:text-white hover:border-b-2 hover:border-red-600 px-3 py-2 text-sm font-bold uppercase tracking-widest transition-all"
+                  className="relative text-zinc-400 hover:text-white px-1 py-2 text-sm font-bold uppercase tracking-widest transition-colors duration-150 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-red-600 after:transition-all after:duration-200 hover:after:w-full"
                 >
                   {link.name}
                 </Link>
               ))}
             </div>
 
-            <button 
+            <button
               onClick={toggleRaceMode}
-              className={`flex items-center gap-2 px-4 py-2 skew-x-[-12deg] transition-all duration-300 ${isRaceMode ? 'bg-red-600 text-white shadow-[0_0_15px_rgba(255,0,0,0.5)]' : 'bg-zinc-900 text-zinc-500 border border-white/10'}`}
+              className={`flex items-center gap-2 px-4 py-2 [clip-path:polygon(8px_0%,100%_0%,calc(100%-8px)_100%,0%_100%)] transition-all duration-200 ${
+                isRaceMode
+                  ? 'bg-red-600 text-white shadow-[0_0_20px_rgba(255,0,0,0.35)]'
+                  : 'bg-zinc-900 text-zinc-500 border border-white/[0.08] hover:border-white/20 hover:text-zinc-300'
+              }`}
             >
-              <Zap className={`h-4 w-4 skew-x-[12deg] ${isRaceMode ? 'fill-current animate-pulse' : ''}`} />
-              <span className="text-[10px] font-black uppercase italic tracking-widest skew-x-[12deg]">
-                {isRaceMode ? 'RACE MODE ACTIVE' : 'ENGAGE RACE MODE'}
+              <Zap className={`h-3.5 w-3.5 ${isRaceMode ? 'fill-current' : ''}`} />
+              <span className="text-[10px] font-black uppercase italic tracking-widest">
+                {isRaceMode ? 'Race Mode On' : 'Race Mode'}
               </span>
             </button>
           </div>
 
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+          {/* Mobile toggle */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 text-zinc-400 hover:text-white transition-colors duration-150 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-black border-b border-white/10 animate-in slide-in-from-top duration-300">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden bg-black/98 border-t border-white/[0.06]">
+          <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase italic"
+                className="block px-3 py-2.5 text-zinc-400 hover:text-white text-sm font-bold uppercase italic tracking-widest transition-colors duration-150 border-b border-white/[0.04] last:border-0"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

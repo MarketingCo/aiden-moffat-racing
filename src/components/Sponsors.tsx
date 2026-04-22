@@ -167,7 +167,7 @@ export default function Sponsors() {
             Strategic <span className="text-red-600">Partnerships</span>
           </h2>
           <p className="text-zinc-500 font-bold uppercase text-[10px] tracking-[0.2em] max-w-md mx-auto">
-            Aiden is proud to represent a elite roster of global automotive and lifestyle brands.
+            Aiden is proud to represent an elite roster of global automotive and lifestyle brands.
           </p>
         </div>
 
@@ -226,7 +226,7 @@ export default function Sponsors() {
               Scale Your Brand<br/>With <span className="text-red-600">Aiden Moffat Racing</span>
             </h3>
             <p className="text-zinc-600 font-bold uppercase text-[10px] tracking-[0.2em] max-w-xl">
-              Unlock global exposure through prime-time ITV coverage, VIP hospitality, and high-performance brand activation across the 2026 BTCC season.
+              Unlock global exposure through prime-time ITV coverage, VIP hospitality, and high-performance brand activation across the 2026 Kwik Fit BTCC season.
             </p>
           </div>
           <button className="relative z-10 skew-x-[2deg] px-12 py-5 bg-black hover:bg-red-600 text-white font-black uppercase italic tracking-widest transition-all transform hover:scale-105 active:scale-95 whitespace-nowrap">
