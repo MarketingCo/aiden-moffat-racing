@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://aiden-moffat-racing.vercel.app",
+    url: "https://www.aidenmoffat.co.uk",
     siteName: "Aiden Moffat Racing",
     title: "Aiden Moffat | BTCC Race Driver & Motorsport Coach",
     description:
@@ -65,12 +65,21 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://aiden-moffat-racing.vercel.app",
+    canonical: "https://www.aidenmoffat.co.uk",
   },
 };
 
 import GlobalEliteEffects from "@/components/GlobalEliteEffects";
 import { RaceModeProvider } from "@/components/RaceModeContext";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Aiden Moffat",
+  jobTitle: "BTCC Racing Driver & Motorsport Coach",
+  url: "https://www.aidenmoffat.co.uk",
+  sameAs: [],
+};
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -78,17 +87,13 @@ const localBusinessSchema = {
   name: "Aiden Moffat Racing",
   description:
     "Professional motorsport coaching and race training services offered by BTCC driver Aiden Moffat. One-on-one sessions, group track days, and advanced simulator training.",
-  url: "https://aiden-moffat-racing.vercel.app",
-  email: "info@aidenmoffat.com",
+  url: "https://www.aidenmoffat.co.uk",
+  email: "info@aidenmoffat.co.uk",
   founder: {
     "@type": "Person",
     name: "Aiden Moffat",
     jobTitle: "BTCC Racing Driver & Motorsport Coach",
-    sameAs: [
-      "https://aiden-moffat-racing.vercel.app/AidenMoffat16",
-      "https://aiden-moffat-racing.vercel.app/aidenmoffat16",
-      "https://aiden-moffat-racing.vercel.app/AidenMoffatRacing",
-    ],
+    sameAs: [],
   },
   address: {
     "@type": "PostalAddress",
@@ -163,6 +168,10 @@ export default function RootLayout({
       className={`${geistSans.variable} h-full antialiased`}
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
