@@ -48,6 +48,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white pt-8 pb-20 md:pb-0">
       <Navbar />
+      <h1 className="sr-only">Aiden Moffat | BTCC Race Driver &amp; Motorsport Coach</h1>
       <LiveTicker />
       <Hero />
       <StatsDashboard />
