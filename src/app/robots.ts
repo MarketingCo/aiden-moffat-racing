@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.aidenmoffat.com/sitemap.xml',
+    sitemap: 'https://aiden-moffat-racing.vercel.app/sitemap.xml',
   }
 }

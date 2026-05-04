@@ -12,7 +12,7 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.aidenmoffat.com"),
+  metadataBase: new URL("https://aiden-moffat-racing.vercel.app"),
   title: "Aiden Moffat | Official Website | BTCC Race Driver",
   description:
     "Official website of Aiden Moffat, BTCC racing driver for Power Maxed Racing. Experience professional race training, one-on-one coaching, group track days, and follow the 2026 Kwik Fit British Touring Car Championship season.",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://www.aidenmoffat.com",
+    url: "https://aiden-moffat-racing.vercel.app",
     siteName: "Aiden Moffat Racing",
     title: "Aiden Moffat | BTCC Race Driver & Motorsport Coach",
     description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.aidenmoffat.com",
+    canonical: "https://aiden-moffat-racing.vercel.app",
   },
 };
 
@@ -78,16 +78,16 @@ const localBusinessSchema = {
   name: "Aiden Moffat Racing",
   description:
     "Professional motorsport coaching and race training services offered by BTCC driver Aiden Moffat. One-on-one sessions, group track days, and advanced simulator training.",
-  url: "https://www.aidenmoffat.com",
+  url: "https://aiden-moffat-racing.vercel.app",
   email: "info@aidenmoffat.com",
   founder: {
     "@type": "Person",
     name: "Aiden Moffat",
     jobTitle: "BTCC Racing Driver & Motorsport Coach",
     sameAs: [
-      "https://twitter.com/AidenMoffat16",
-      "https://www.instagram.com/aidenmoffat16",
-      "https://www.facebook.com/AidenMoffatRacing",
+      "https://aiden-moffat-racing.vercel.app/AidenMoffat16",
+      "https://aiden-moffat-racing.vercel.app/aidenmoffat16",
+      "https://aiden-moffat-racing.vercel.app/AidenMoffatRacing",
     ],
   },
   address: {
