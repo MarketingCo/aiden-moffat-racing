@@ -12,7 +12,7 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aiden-moffat-racing.vercel.app"),
+  metadataBase: new URL('https://www.aidenmoffat.co.uk'),
   title: "Aiden Moffat | Official Website | BTCC Race Driver",
   description:
     "Official website of Aiden Moffat, BTCC racing driver for Power Maxed Racing. Experience professional race training, one-on-one coaching, group track days, and follow the 2026 Kwik Fit British Touring Car Championship season.",
